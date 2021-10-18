@@ -1,0 +1,151 @@
+/* border box fix */
+html {
+    box-sizing:border-box;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#name {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 140%;
+    margin-top: 70px;
+    color: rgb(94, 94, 94);
+}
+ul {
+    font-size: 70%;
+    text-align: right;
+    padding-right: 200px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    margin-top: -30px;
+}
+li {
+    display: inline;
+    padding: 10px;
+}
+li a {
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+}
+li a:hover {
+    color: black;
+}
+.active {
+    color: black;
+    text-decoration: underline;
+}
+.column {
+    float:left;
+    width:50%;
+    padding-top: 280px;
+    padding-bottom: 280px;
+    margin: none;
+    border: none;
+    font-size: 25px;
+    transition-duration: 0.4s;
+}
+#art {
+    background-image: url("image/mundaneTasks2.jpg");
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    color:black;
+    
+}
+
+#des {
+    background-image: url("image/LIU_005_Phone-H2.jpg");
+    opacity: 0.7;
+    background-repeat: no-repeat;
+}
+
+
+  /* Bounce To Bottom */
+  #art {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  #art:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #668586;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #art:hover, #art:focus, #art:active {
+    color: white;
+  }
+  #art:hover:before, #art:focus:before, #art:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+    /* Bounce To Bottom */
+    #des {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+      }
+      #des:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #BB8588;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      #des:hover, #des:focus, #des:active {
+        color: white;
+      }
+      #des:hover:before, #des:focus:before, #des:active:before {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      }

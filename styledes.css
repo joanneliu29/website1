@@ -1,0 +1,78 @@
+/* border box fix */
+html {
+    box-sizing:border-box;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#name {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 140%;
+    margin-top: 70px;
+    color: rgb(94, 94, 94);
+    margin-left: 18px;
+}
+.nav {
+    font-size: 70%;
+    text-align: right;
+    padding-right: 200px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    margin-right: -17px;
+}
+.n {
+    display: inline;
+    padding: 10px;
+}
+.n a {
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+}
+.n a:hover {
+    color: black;
+}
+#active {
+    color: black;
+    text-decoration: underline;
+}
+
+.container {
+    position: relative;
+    width: fit-content;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image {
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0;
+    transition: .4s;
+    background-color: #000000;
+}
+.container:hover .overlay {
+    opacity: 0.7;
+}
+.texts {
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
