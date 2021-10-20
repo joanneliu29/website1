@@ -66,6 +66,7 @@ li a:hover {
 
   /* Bounce To Bottom */
   #art {
+    cursor: pointer;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -109,7 +110,8 @@ li a:hover {
 
     /* Bounce To Bottom */
     #des {
-        display: inline-block;
+      cursor: pointer;  
+      display: inline-block;
         vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
